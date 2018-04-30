@@ -12,7 +12,10 @@
     GNU General Public License for more details.
 
 
+You can cite this code using the DOI URL:
 
+
+https://doi.org/10.5281/zenodo.1237969
 
 
                     GNU GENERAL PUBLIC LICENSE
@@ -634,6 +637,12 @@ reviewing courts shall apply local law that most closely approximates
 an absolute waiver of all civil liability in connection with the
 Program, unless a warranty or assumption of liability accompanies a
 copy of the Program in return for a fee.
+
+
+You can cite this code using the DOI URL:
+
+
+https://doi.org/10.5281/zenodo.1237969
 
                      END OF TERMS AND CONDITIONS
 
