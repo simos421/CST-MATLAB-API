@@ -11,13 +11,7 @@
 % GNU General Public License for more details.
 
 
-addpath('...\Home');
-addpath('...\Materials');
-addpath('...\Modeling');
-addpath('...\PostProcessing');
-addpath('...\Simulation');
-addpath('...\cst api');
-addpath('..\cstapitest');
+addpath(genpath('...\cst api'));
 
 cst = actxserver('CSTStudio.application');
 mws = cst.invoke('NewMWS');
