@@ -25,6 +25,8 @@
 
 addpath(genpath('...\cst api')); %For instance, my path is: addpath(genpath('C:\Users\simos\Dropbox\cst api'));
 
+
+
 %This command is used to initiate the CST application, as you can see here, it is assigned to
 %the cst variable. 
 cst = actxserver('CSTStudio.application');
@@ -178,9 +180,9 @@ Orientation = 'positive';
 CstWaveguidePort(mws,PortNumber, Xrange, Yrange, Zrange, XrangeAdd, YrangeAdd, ZrangeAdd,Coordinates,Orientation)
 
 %Here I am assigning monitors for the e-field, h-field and farfield at 2.45GHz 
-CstDefineEfieldMonitor(mws,strcat('e-field', 2.45),2.45);
-CstDefineHfieldMonitor(mws,strcat('h-field', 2.45), 2.45);
-CstDefineFarfieldMonitor(mws,strcat('Farfield',2.45), 2.45);
+CstDefineEfieldMonitor(mws,strcat('e-field', '2.45'),2.45);
+CstDefineHfieldMonitor(mws,strcat('h-field', '2.45'), 2.45);
+CstDefineFarfieldMonitor(mws,strcat('Farfield','2.45'), 2.45);
 
 
 %Saves the project
@@ -192,8 +194,8 @@ CstDefineTimedomainSolver(mws,-40)
 
 %Here you need to define the path that you want your s parametters to be
 %exported and the name of your file. Mine for instance are: 
-%exportpath = 'C:\Users\simos\Dropbox\cst api\microstrip';
-%filenameTXT = 'microstrip';
+% exportpath = 'C:\Users\simos\Dropbox\cst api\microstrip';
+% filenameTXT = 'microstrip';
 exportpath = '...\microstrip';
 filenameTXT = 'microstrip';
 
@@ -204,6 +206,7 @@ plot(Frequency,Sparametter,'-'); grid on;
 legend('S11 (dB)')
 title('patch antenna at 2.45GHz')
 xlabel('Frequency (GHz)') 
+
 
 %In the API's folders you'll find many more functions that do all kinds of stuff in CST. 
 %As you've seen in this tutorial the name of each function prety much describes what it does
